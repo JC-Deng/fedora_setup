@@ -1,0 +1,41 @@
+systemctl mask oomd
+
+sudo mount /dev/sda4 ~/tmptmp
+
+sudo dnf install make automake cmake gcc gcc-c++ kernel-devel perl
+
+sudo SDE_TMPDIR="$HOME/tmptmp" ~/sde/bin/sde_install_clang \
+    --num-parallel-compile-jobs 4 --num-parallel-link-jobs 1 \
+    --build-type RelWithDebInfo --keep-source --enable-assertions \
+    --no-enable-libc --enable-libcxx --enable-openmp --enable-libclc \
+    --enable-shared-libllvm --enable-rtti --enable-eh --no-default-pie \
+    --repo -v llvmorg-15.0.0 \
+    -d ~/install
+
+start time ............. 2022-12-13@07:11:52
+download start time .... 2022-12-13@07:11:52
+configure start time ... 2022-12-13@07:14:57
+build start time ....... 2022-12-13@07:15:30
+install start time ..... 2022-12-13@14:33:27
+end time ............... 2022-12-13@14:34:06
+
+
+*******************************************************************
+               total        used        free      shared  buff/cache   available
+Mem:            27Gi       3.4Gi       5.6Gi       4.0Mi        18Gi        23Gi
+Swap:          8.0Gi       1.2Gi       6.8Gi
+3.7G	/home/d/install
+156G	/home/d/tmptmp
+*******************************************************************
+               total        used        free      shared  buff/cache   available
+Mem:            27Gi       1.5Gi       5.4Gi       4.0Mi        20Gi        25Gi
+Swap:          8.0Gi       1.2Gi       6.8Gi
+3.7G	/home/d/install
+163G	/home/d/tmptmp
+*******************************************************************
+               total        used        free      shared  buff/cache   available
+Mem:            27Gi       1.5Gi        24Gi       4.0Mi       1.6Gi        25Gi
+Swap:          8.0Gi       1.1Gi       6.9Gi
+120G	/home/d/install
+0	/home/d/tmptmp
+*******************************************************************
