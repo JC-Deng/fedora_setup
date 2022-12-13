@@ -28,4 +28,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $script_dir/.
 rm $script_dir/../.zshrc
 cp $script_dir/.zshrc $script_dir/../
 
+echo "***********************************************************"
 echo "Need to add .pub to authorized_keys and set permits to 644."
