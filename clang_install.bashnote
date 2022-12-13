@@ -1,3 +1,5 @@
+systemctl mask oomd
+
 SDE_TMPDIR="$HOME" ./bin/sde_install_clang \
     --num-parallel-compile-jobs 4 --num-parallel-link-jobs 1 \
     --build-type RelWithDebInfo --keep-source --enable-assertions \
