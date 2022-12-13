@@ -1,5 +1,3 @@
-# Should be cloned to the top level of home directory.
-
 hostnamectl set-hostname sde
 
 dnf upgrade -y
