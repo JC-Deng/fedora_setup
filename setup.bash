@@ -4,6 +4,7 @@ hostnamectl set-hostname sde
 
 dnf upgrade -y
 dnf install vim -y
+dnf install gparted -y
 
 systemctl enable sshd
 systemctl start sshd
