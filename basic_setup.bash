@@ -19,7 +19,7 @@ dnf install zsh -y
 
 echo "***********************************************************"
 echo "Get oh-my-zsh."
-echo "sh -c "\$\(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh\)""
+echo "sh -c \"\$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\""
 
 echo "***********************************************************"
 echo "Get ZSH plugins."
