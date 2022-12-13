@@ -10,5 +10,5 @@ while :; do
     du -hs /home/d/install >> $SCRIPT_PATH/build.log
     du -hs /home/d/tmptmp >> $SCRIPT_PATH/build.log
     echo "*******************************************************************" >> $SCRIPT_PATH/build.log
-    sleep 20
+    sleep 300
 done
