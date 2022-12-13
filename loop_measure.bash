@@ -6,5 +6,5 @@ while :; do
     echo "*****************************************" >> $SCRIPT_PATH/build.log
     free -h >> $SCRIPT_PATH/build.log
     echo "*****************************************" >> $SCRIPT_PATH/build.log
-    sleep 5
+    sleep 15
 done
