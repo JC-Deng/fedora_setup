@@ -1,6 +1,6 @@
 systemctl mask oomd
 
-SDE_TMPDIR="$HOME/tmptmp" ./bin/sde_install_clang \
+sudo SDE_TMPDIR="$HOME/tmptmp" ./bin/sde_install_clang \
     --num-parallel-compile-jobs 4 --num-parallel-link-jobs 1 \
     --build-type RelWithDebInfo --keep-source --enable-assertions \
     --no-enable-libc --enable-libcxx --enable-openmp --enable-libclc \
