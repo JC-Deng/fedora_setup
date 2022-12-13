@@ -103,3 +103,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Note the source command must be at the end of .zshrc
 source "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+export PATH=~/install/bin:$PATH
