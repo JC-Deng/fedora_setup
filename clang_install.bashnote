@@ -1,0 +1,7 @@
+SDE_TMPDIR="$HOME" ./bin/sde_install_clang \
+    --num-parallel-compile-jobs 4 --num-parallel-link-jobs 1 \
+    --build-type RelWithDebInfo --keep-source --enable-assertions \
+    --no-enable-libc --enable-libcxx --enable-openmp --enable-libclc \
+    --enable-shared-libllvm --enable-rtti --enable-eh --no-default-pie \
+    --repo -v llvmorg-15.0.0 \
+    -d ~/install
