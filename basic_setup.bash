@@ -1,19 +1,19 @@
-hostnamectl set-hostname sde
+# hostnamectl set-hostname sde
 
 dnf upgrade -y
-dnf install vim -y
+dnf install nvim -y
 dnf install gparted -y
 
 systemctl enable sshd
 systemctl start sshd
 
-file=/etc/ssh/sshd_config
-cp -p $file $file.old &&
-awk '
-$1=="#PubkeyAuthentication" {$1="PubkeyAuthentication"}
-{print}
-' $file.old > $file
-rm -f $file.old
+# file=/etc/ssh/sshd_config
+# cp -p $file $file.old &&
+# awk '
+# $1=="#PubkeyAuthentication" {$1="PubkeyAuthentication"}
+# {print}
+# ' $file.old > $file
+# rm -f $file.old
 
 dnf install zsh -y
 
