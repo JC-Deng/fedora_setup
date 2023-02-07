@@ -1,4 +1,4 @@
-systemctl mask oomd
+systemctl mask systemd-oomd
 
 sudo mount /dev/sda4 ~/tmptmp
 
