@@ -2,7 +2,7 @@ systemctl mask systemd-oomd
 
 sudo mount /dev/sda4 ~/tmptmp
 
-sudo dnf install make automake cmake gcc gcc-c++ kernel-devel perl rpm-build boost-devel fmt-devel -y
+sudo dnf install make automake cmake gcc gcc-c++ kernel-devel perl rpm-build boost-devel fmt-devel bear -y
 
 mkdir ~/tmptmp
 
