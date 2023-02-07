@@ -1,7 +1,7 @@
 # hostnamectl set-hostname sde
 
 dnf upgrade -y
-dnf install nvim -y
+dnf install neovim -y
 dnf install gparted -y
 
 systemctl enable sshd
