@@ -2,7 +2,6 @@
 
 dnf upgrade -y
 dnf install neovim -y
-dnf install gparted -y
 
 systemctl enable sshd
 systemctl start sshd
