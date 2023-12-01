@@ -70,9 +70,9 @@ ZSH_THEME="aussiegeek"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(z git zsh-autosuggestions zsh-syntax-highlighting)
 bindkey ',' autosuggest-accept
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -101,7 +101,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Note the source command must be at the end of .zshrc
 source "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-
 export PATH=~/install/bin:$PATH
