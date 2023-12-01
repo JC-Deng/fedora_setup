@@ -31,7 +31,7 @@ echo "cp ~/fedora_setup/.zshrc ~/"
 
 echo "***********************************************************"
 echo "Change default shell to zsh using the following command."
-echo "usermod -s $(which zsh) $(whoami)"
+echo "sudo usermod -s $(which zsh) $(whoami)"
 
 echo "***********************************************************"
 echo "Need to add .pub to authorized_keys and set permits to 644."
